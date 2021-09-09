@@ -103,7 +103,7 @@ button {
 }
 
 .hero nav {
-  background: #603bbb;
+  background: #543a96;
   width: 100%;
   padding: 20px 40px;
   display: flex;
@@ -120,8 +120,8 @@ button {
   padding: 8px 0;
   background: #5511dd;
 }
-.demo {
+/* .demo {
   color: rgb(248, 239, 239);
   font-weight: bold;
   padding-left: 7rem;
- }
+ } */
