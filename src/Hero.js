@@ -5,7 +5,7 @@ const Hero = ({email,handlelogout}) => {
         <section className="hero">
             <nav>
                 <h2>
-                 Welcome {email}
+                 Welcome !! {email}
                 </h2>
                 <button onClick={handlelogout}> Logout </button>
             </nav>
