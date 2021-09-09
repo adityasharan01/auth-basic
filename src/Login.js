@@ -35,9 +35,10 @@ const Login = (props) => {
 
                 }
             </div>
-            <div className="damo">
-                <p>Email : admin@gmail.com</p>
-                <p>pass : @admin5</p>
+            <div className="demo">
+                <p> Use this as guest login </p>
+                <p>Email : admin@admin.com</p>
+                <p>pass : 123123</p>
 
             </div>
 

@@ -118,5 +118,10 @@ button {
 .hero nav button {
   width: 86px;
   padding: 8px 0;
-  background: #3a2b58;
+  background: #5511dd;
 }
+.demo {
+  color: rgb(248, 239, 239);
+  font-weight: bold;
+  padding-left: 7rem;
+ }

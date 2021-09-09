@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Hero = ({handleLogout}) => {
+const Hero = ({email,handlelogout}) => {
     return (
         <section className="hero">
             <nav>
                 <h2>
-                    Welcome!
+                 Welcome {email}
                 </h2>
-                <button onClick={handleLogout}> Logout </button>
+                <button onClick={handlelogout}> Logout </button>
             </nav>
 
         </section>

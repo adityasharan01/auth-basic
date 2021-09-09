@@ -6,7 +6,7 @@ import Hero from './Hero';
 require('firebase/auth'); 
 const App = () => {
     // ======= state  =======
-    let [user, setUser] = useState('');
+    const [user, setUser] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -69,7 +69,8 @@ const App = () => {
           }
         });
     };
-  
+  // ======= key press function=======
+    //We can add key press functionality based on whichever page we are in login or signup
     // ======= logout function=======
   
   
@@ -98,7 +99,7 @@ const App = () => {
     return (
       <div className="App">
         {user ? (
-          <Hero handlelogout={handlelogout} />
+          <Hero email={email} handlelogout={handlelogout} />
                 ) :
             (
             <Login
