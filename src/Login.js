@@ -1,7 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react';
 
 const Login = (props) => {
     const {email,setEmail,password,setPassword,handlelogin,handleSignup,hasAcount,sethasAcount,emailError,passwordError} = props;
+    const [guestBtnClicked,setguestBtnClicked]=useState(false)
+
+    const handleGuestLogin=()=>{
+        setguestBtnClicked(!guestBtnClicked)
+        sethasAcount(true)
+        setEmail('admin@admin.com')
+        setPassword('123123')
+    }
     return (
         <section className="login">
         <div className="loginContainer">
@@ -35,13 +43,17 @@ const Login = (props) => {
 
                 }
             </div>
-            <div className="demo">
+            {/* <div className="demo">
                 <p> Use this as guest login </p>
                 <p>Email : admin@admin.com</p>
                 <p>pass : 123123</p>
 
+            </div> */}
+            {!guestBtnClicked &&  
+            <div className="btnContainer">
+            <button onClick={handleGuestLogin}>Guest Login</button>
             </div>
-
+            }
         </div>
 
     </section>
